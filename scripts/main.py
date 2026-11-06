@@ -26,7 +26,7 @@ def validate_output(seq): #function that checks if the output is valid.
             positive_count += 1
         elif aa in negative:
             negative_count += 1
-    non_polar_count -= 1 #subtracts 1 from the non_polar_count to account for the methionine added to the start of the sequence.
+    non_polar_count
     if non_polar_count == non_polar_needed and polar_count == polar_needed and positive_count == positive_needed and negative_count == negative_needed and seq[0] == 'M' and len(seq) == 150: #checks if the sequence meets the requirements.
         return True
     else:
@@ -65,6 +65,6 @@ for i in range(seq_num):#loop that runs the number of times the user specified.
     file.write('>Rand_Prot' + str(i+1) + '\n') #writes the header for the sequence in the results file.
     file.write(''.join(seq) + '\n') #converts the list to a string and writes the sequence of amino acids to the results file.
 
-    print(validate_output(seq)) #prints the output of the validate_output function to check if the sequence meets the requirements expected.
+    #print(validate_output(seq)) #prints the output of the validate_output function to check if the sequence meets the requirements expected.
 
 file.close() #closes the results file.
