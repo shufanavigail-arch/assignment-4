@@ -49,3 +49,11 @@ amino acid groups, then it adds the lists together and converts them into a stri
 It writes the results into the output file, and uses function 3 to check
 if each sequence is valid.
 
+The program was tested with the following inputs to check it does its validation
+correctly:
+1.input - 1, result: generates 1 protein sequence
+2.input - 1000, result: generates 1000 protein sequences
+3.input - -1, result: rejects the input and requests a valid number
+4.input - a, result: rejects the input and requests a valid number
+5.input - 1.5, result: rejects the input and requests a valid number
+6.input - $, result: rejects the input and requests a valid number
